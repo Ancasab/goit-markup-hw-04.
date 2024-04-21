@@ -281,13 +281,13 @@ color: var(--black);
     height: 20px;
     fill: var(--gray-icon)
 }
-.icon_social:hover,
-.icon_social:focus {
-    fill: var(--white)
-}
 .team-section__card__social li:hover,
 .team-section__card__social li:focus {
     background-color: var(--blue);
+}
+.team-section__card__social li:hover .icon_social,
+.team-section__card__social li:focus .icon_social {
+    fill: var(--white);
 }
 
 
@@ -313,7 +313,7 @@ color: var(--black);
 .customer__sigle__list {
     display: flex;
     list-style: none;
-    
+    gap:30px;
 } 
 
 .customer__sigla {
@@ -329,13 +329,12 @@ color: var(--black);
 .customer_icon {
     fill: var(--gray-icon);
 }
-.customer_icon:hover {
-    fill: var(--blue);
-    stroke: var(--blue);
-}
 
 .customer__sigla:hover {
     border-color: var(--blue);
+}
+.customer__sigla:hover .customer_icon {
+    fill: var(--blue);
 }
 /* Footer section style*/
 
@@ -349,7 +348,6 @@ color: var(--black);
     flex-direction: column; 
     justify-content:flex-start; 
     flex-wrap: wrap;
-  
     
 }
 
